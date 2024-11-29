@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+cat << EOF | oc apply -f -
 apiVersion: k8s.keycloak.org/v2alpha1
 kind: Keycloak
 metadata:
@@ -17,8 +22,8 @@ spec:
       name: keycloak-db-secret
       key: password
   http:
-    tlsSecret: example-tls-secret
+    tlsSecret: rhbk-tls-secret
   hostname:
-    hostname: rhbk-playground.apps.rosa-d4f9h.v87h.p1.openshiftapps.com
+    hostname: "$(echo $NAMESPACE.$HOSTNAME)"
   proxy:
-    headers: xforwarded # double check your reverse proxy sets and overwrites the X-Forwarded-* headers
+    headers: xforwarded

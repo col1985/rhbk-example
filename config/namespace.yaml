@@ -1,0 +1,9 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: rhbk-playground
+  annotations:
+    openshift.io/display-name: rhbk-playground
+    openshift.io/description: Namespace for deploying developmenbt build of rhbk.
+  labels:
+    name: rhbk
