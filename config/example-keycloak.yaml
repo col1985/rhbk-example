@@ -20,6 +20,6 @@ spec:
   http:
     tlsSecret: rhbk-tls-secret
   hostname:
-    hostname: "<hostname>"
+    hostname:
   proxy:
-    headers: xforwarded # double check your reverse proxy sets and overwrites the X-Forwarded-* headers
+    headers: xforwarded

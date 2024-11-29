@@ -36,7 +36,7 @@ oc apply -f config/rhbk-operator.yaml
 2. Search for Red Hat build of Keycloak
 3. Select and click install
 
-### Install developemt database
+### Install development database
 
 ```bash
 oc apply -f config/rhbk-postgres.yaml
