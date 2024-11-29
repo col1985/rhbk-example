@@ -66,8 +66,13 @@ sh scripts/create_keycloak.sh
 oc get keycloaks/rh-keycloak -o go-template='{{range .status.conditions}}CONDITION: {{.type}}{{"\n"}}  STATUS: {{.status}}{{"\n"}}  MESSAGE: {{.message}}{{"\n"}}{{end}}'
 ```
 
-### Get initial Admion credentials
+### Get initial Admin credentials
 
 ```bash
 sh get_admin_cred.sh
 ```
+
+
+## Configuring RHBK
+
+View the documentation to get start with Keycloak [here](https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/26.0/html/getting_started_guide/getting-started-zip-#getting-started-zip-before-you-start)
