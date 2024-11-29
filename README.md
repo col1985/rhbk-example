@@ -1,6 +1,6 @@
 # RHBK Development Deployment Example
 
-![linter workflow](https://github.com/col1985/rhbk-example/actions/workflows/super-linter/badge.svg)
+![linter workflow](https://github.com/col1985/rhbk-example/actions/workflows/super-linter.yml/badge.svg)
 
 ## Description
 
